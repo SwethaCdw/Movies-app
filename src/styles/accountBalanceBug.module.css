@@ -1,0 +1,5 @@
+/* Styling bug: The .accountBalance class uses a color that is too light for accessibility. */
+.accountBalance {
+  color: #b6e2d3;
+  font-weight: 500;
+}

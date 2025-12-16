@@ -1,0 +1,106 @@
+/*
+  Cinema Card & Button Styles
+  -----------------------------------
+  For movie-style cards, buttons, and interactive elements.
+*/
+
+.cinema-card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: transparent;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.cinema-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 2rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.25s cubic-bezier(.4,0,.2,1), box-shadow 0.25s cubic-bezier(.4,0,.2,1);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ececec;
+}
+.cinema-card:hover {
+  transform: translateY(-8px) scale(1.025);
+  box-shadow: 0 8px 32px 0 var(--accent-purple), 0 4px 24px rgba(34, 18, 51, 0.10);
+}
+.cinema-card-title {
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  margin-bottom: 0.2em;
+  letter-spacing: 0.04em;
+  text-shadow: none;
+}
+.cinema-card-sub {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  margin-bottom: 0.1em;
+  text-shadow: none;
+}
+.cinema-card-balance, .cinema-card-amount {
+  color: var(--accent-red);
+  font-size: 1.15rem;
+  font-weight: var(--font-weight-bold);
+  text-shadow: none;
+}
+.cinema-card-status {
+  color: var(--accent-purple);
+  font-size: 1.05rem;
+  margin-top: 0.3em;
+  font-weight: 600;
+}
+
+/* Buttons */
+.cinema-btn-group {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
+  justify-content: center;
+}
+.cinema-btn {
+  background: var(--accent-purple);
+  color: var(--text-primary);
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 0.85rem 2.2rem;
+  font-size: 1.08rem;
+  font-family: var(--font-main);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background 0.25s, transform 0.18s, box-shadow 0.18s;
+  outline: none;
+  position: relative;
+  z-index: 1;
+}
+.cinema-btn:hover, .cinema-btn:focus {
+  background: linear-gradient(90deg, var(--accent-gold) 0%, var(--accent-red) 100%);
+  color: var(--bg-main);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 6px 24px 0 var(--accent-blue);
+}
+.cinema-btn-active {
+  background: linear-gradient(90deg, var(--accent-gold) 0%, var(--accent-red) 100%);
+  color: var(--bg-main);
+  box-shadow: 0 2px 12px 0 var(--accent-gold);
+}
+
+@media (max-width: 600px) {
+  .cinema-card {
+    padding: 1.2rem 0.8rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cinema-btn-group {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+}

@@ -1,0 +1,85 @@
+/*
+  Cinema Theme CSS Variables
+  -----------------------------------
+  Use these variables for all colors, spacing, and font choices.
+*/
+:root {
+  /* Palette */
+  --bg-main: #18122B;
+  --bg-card: white;
+  --accent-red: #E94560;
+  --accent-gold: #FFD700;
+  --accent-blue: #00CFFD;
+  --accent-purple: #A259FF;
+  --text-primary: #18122B;
+  --text-secondary: #44476a;
+  --shadow-main: 0 8px 32px rgba(0,0,0,0.07);
+  --shadow-card: 0 4px 24px rgba(34, 18, 51, 0.10);
+  /* Typography */
+  --font-main: 'Montserrat', 'Poppins', 'Roboto', Arial, sans-serif;
+  --font-size-h1: 2.2rem;
+  --font-size-h2: 1.5rem;
+  --font-size-body: 1.05rem;
+  --font-weight-bold: 700;
+  --font-weight-regular: 400;
+  /* Spacing */
+  --radius-lg: 1.5rem;
+  --radius-md: 1rem;
+  --radius-sm: 0.5rem;
+  --transition-main: 0.25s cubic-bezier(.4,0,.2,1);
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  font-size: var(--font-size-body);
+  margin: 0;
+  min-height: 100vh;
+  letter-spacing: 0.01em;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-main);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-gold);
+  margin-bottom: 0.5em;
+}
+
+/* Utility classes for layout and text */
+.cinema-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+.cinema-section {
+  margin-bottom: 2.5rem;
+}
+.cinema-title {
+  font-size: var(--font-size-h1);
+  color: var(--accent-gold);
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 12px var(--accent-purple);
+  text-align: center;
+}
+.cinema-subtitle {
+  font-size: var(--font-size-h2);
+  color: var(--accent-blue);
+  margin-bottom: 1rem;
+}
+.cinema-text {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .cinema-container {
+    padding: 1.2rem 0.5rem;
+  }
+  .cinema-title {
+    font-size: 1.4rem;
+  }
+}
