@@ -16,8 +16,8 @@ Welcome! This assignment is designed to test your debugging skills in a React/Ne
 The app has the following issues:
 
 - Movie filtering does not work as expected
-- Some UI elements render incorrectly or glitch
-- All the test cases should pass.**
+- The hamburger icon does not open and close as expected
+- All the test cases should pass.
 
 
 Good luck!
