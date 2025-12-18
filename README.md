@@ -2,22 +2,33 @@
 
 # Movie Debugging Assignment
 
-Welcome! This assignment is designed to test your debugging skills in a React/Next.js codebase. The app runs, but contains several intentional bugs. Your goal is to find and fix them.
+Debug the movie filtering functionality in this Next.js app.
 
 ## Setup
+```bash
+pnpm install
+pnpm dev
+npm test 
+```
 
-1. Install dependencies:
-   pnpm install
-2. Run the development server:
-   pnpm dev
+## What to Fix
 
-## What to Debug
+1. **Movie Filter Not Working** 
+   - Filter dropdown selections show zero movies
 
-The app has the following issues:
+2. **Filter Mapping Missing**
+   - `getFilterMapping()` function needs implementation
 
-- Movie filtering does not work as expected
-- The hamburger icon does not open and close as expected
-- All the test cases should pass.
+3. **Value Mismatch**
+   - UI uses 'showing'/'upcoming' but data uses 'now_showing'/'coming_soon'
 
+4. **Screenings Page Stuck Loading**
+   - Screenings page shows infinite loading spinner
 
-Good luck!
+5. **Test cases**
+   - All 8 tests pass
+
+6. **Fix any other issues you encounter**
+
+Thanks and Good luck!
+
