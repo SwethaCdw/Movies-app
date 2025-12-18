@@ -2,8 +2,6 @@
 
 # Movie Debugging Assignment
 
-Debug the movie filtering functionality in this Next.js app.
-
 ## Setup
 ```bash
 pnpm install

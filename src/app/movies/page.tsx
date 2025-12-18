@@ -14,7 +14,7 @@ async function fetchPopularMovies(): Promise<Movie[]> {
     
     for (const term of popularSearchTerms) {
       const response = await fetch(
-        `https://www.omdbapi.com/?s=${term}&type=movie&apikey=trilogy`
+        `https://www.omdbapi.com/?s=${term}&type=movie&apikey=95f2b75c`
       );
 
       if (!response.ok) {
