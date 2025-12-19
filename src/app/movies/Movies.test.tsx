@@ -1,4 +1,4 @@
-import { render, screen, waitFor, fireEvent } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import MoviesPage from './page';
 
@@ -69,6 +69,9 @@ describe('MoviesPage Tests', () => {
     });
 
     //TODO: complete the test case
+    // Step 1: Find the filter dropdown
+    // Step 2: Change the filter
+    // Step 3: Check if the dropdown value appears
    
   });
 });

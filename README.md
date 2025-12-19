@@ -8,7 +8,7 @@ Clone the app - https://github.com/SwethaCdw/Movies-app
 ```bash
 pnpm install
 pnpm dev
-npm test 
+pnpm test 
 ```
 
 ## What to Fix
