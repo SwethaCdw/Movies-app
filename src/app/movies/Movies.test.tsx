@@ -18,7 +18,7 @@ describe('MoviesPage', () => {
     await waitFor(() => {
       expect(screen.getByText('The Shawshank Redemption')).toBeInTheDocument();
     });
-    const movieCards = await screen.findAllByTestId('movie-card');
+    const movieCards = await screen.findAllByTestId('movieCard');
     
     expect(movieCards).toHaveLength(3);
   });
