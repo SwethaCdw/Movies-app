@@ -5,11 +5,16 @@ export function filterMovies(movies: Movie[], filterValue: string): Movie[] {
     return movies;
   }
   
-  return movies.filter(movie => movie.category === filterValue);
+  const mappedValue = getFilterMapping(filterValue);
+  return movies.filter(movie => movie.category === mappedValue);
 }
 
-// Helper function to get the correct filter value (for debugging exercise)
 export function getFilterMapping(uiValue: string): string {
-  // TODO: Implement proper mapping between UI filter values and movie categories
+  if (uiValue === 'showing') {
+    return 'now_showing';
+  }
+  if (uiValue === 'coming_soon') { 
+    return 'coming_soon';
+  }
   return uiValue;
 }

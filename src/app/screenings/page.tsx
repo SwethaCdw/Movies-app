@@ -30,26 +30,19 @@ export default function ScreeningsPage() {
     }
   }, [screenings, error]);
 
-  //Hint: Promise never resolves! The condition is never true
+  // Load screenings data
   async function fetchScreenings() {
     try {
       setLoading(true);
       setError(null);
       
-      const data = await new Promise<Screening[]>((resolve, reject) => {
-        setTimeout(() => {
-          if (screenings.length > 0) {
-            resolve(mockScreenings);
-          } else {
-            console.log('Fetching screenings...');
-          }
-        }, 1000);
-      });
+      // Simulate loading delay
+      setTimeout(() => {
+        setScreenings(mockScreenings);
+      }, 1000);
       
-      setScreenings(data);
     } catch (err) {
       setError('Failed to load screenings');
-    } finally {
       setLoading(false);
     }
   }

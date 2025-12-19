@@ -45,6 +45,7 @@ async function fetchPopularMovies(): Promise<Movie[]> {
     return allMovies;
   } catch (error) {
     console.error('Error fetching movies from OMDb:', error);
+    return []; 
   }
 }
 
