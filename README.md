@@ -24,7 +24,7 @@ npm test
    - Screenings page shows infinite loading spinner
 
 5. **Test cases**
-   - All 8 tests pass
+   - All tests pass
 
 6. **Fix any other issues you encounter**
 
