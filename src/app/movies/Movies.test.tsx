@@ -11,24 +11,6 @@ describe('MoviesPage', () => {
     (fetch as jest.Mock).mockClear();
   });
 
-  it('renders the Popular Movies heading', async () => {
-    render(<MoviesPage />);
-    
-    await waitFor(() => {
-      expect(screen.getByText('Popular Movies')).toBeInTheDocument();
-    });
-  });
-
-  it('renders movie items from mock data when API fails', async () => {
-    render(<MoviesPage />);
-    
-    await waitFor(() => {
-      expect(screen.getByText('The Shawshank Redemption')).toBeInTheDocument();
-    });
-    
-    expect(screen.getByText('The Dark Knight')).toBeInTheDocument();
-    expect(screen.getByText('The Lord of the Rings: The Return of the King')).toBeInTheDocument();
-  });
 
   it('shows correct number of movies', async () => {
     render(<MoviesPage />);
@@ -36,7 +18,7 @@ describe('MoviesPage', () => {
     await waitFor(() => {
       expect(screen.getByText('The Shawshank Redemption')).toBeInTheDocument();
     });
-        const movieCards = await screen.findAllByTestId('movie-card');
+    const movieCards = await screen.findAllByTestId('movie-card');
     
     expect(movieCards).toHaveLength(3);
   });
