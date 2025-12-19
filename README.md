@@ -2,6 +2,8 @@
 
 # Movie Debugging Assignment
 
+Clone the app - https://github.com/SwethaCdw/Movies-app
+
 ## Setup
 ```bash
 pnpm install
@@ -19,11 +21,10 @@ npm test
 
 3. **The Hamburger icon does not work as expected**
 
-
-5. **Test cases**
+4. **Test cases**
    - All tests pass
 
-6. **Fix any other issues you encounter**
+5. **Fix any other issues you encounter**
 
 Thanks and Good luck!
 
